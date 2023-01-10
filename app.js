@@ -14,6 +14,10 @@ const winsEl = document.getElementById('wins');
 const winCount = document.getElementById('win-count');
 const lossCount = document.getElementById('loss-count');
 
+// const treeHide = document.getElementById('tree-hide');
+// const boulderHide = document.getElementById('boulder-hide');
+// const shedHide = document.getElementById('shed-hide');
+
 let incorrectGuesses = 0;
 let correctGuesses = 0;
 let totalGuesses = 0;
