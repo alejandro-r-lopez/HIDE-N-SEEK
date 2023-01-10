@@ -18,6 +18,7 @@ let totalGuesses = 0;
 shedButton.addEventListener('click', () => {
     const correctSpot = getRandomHidingSpot();
     handleGuess('shed', correctSpot);
+
     // get a random item to call the 'correct spot'
     // call the handleGuess function with the correct parameters (the user's guess and the 'correct' hiding place) to do DOM work
 });
@@ -25,6 +26,7 @@ shedButton.addEventListener('click', () => {
 treeButton.addEventListener('click', () => {
     const correctSpot = getRandomHidingSpot();
     handleGuess('tree', correctSpot);
+
     // get a random item to call the 'correct spot'
     // call the handleGuess function with the correct parameters (the user's guess and the 'correct' hiding place) to do DOM work
 });
@@ -32,12 +34,12 @@ treeButton.addEventListener('click', () => {
 boulderButton.addEventListener('click', () => {
     const correctSpot = getRandomHidingSpot();
     handleGuess('boulder', correctSpot);
+
     // get a random item to call the 'correct spot'
     // call the handleGuess function with the correct parameters (the user's guess and the 'correct' hiding place) to do DOM work
 });
 
 function getRandomHidingSpot() {
-    // initialize state
     const hidingPlaces = ['tree', 'shed', 'boulder'];
 
     const index = Math.floor(Math.random() * hidingPlaces.length);
@@ -45,6 +47,8 @@ function getRandomHidingSpot() {
     const correctSpot = hidingPlaces[index];
 
     return correctSpot;
+
+    // initialize state
 
     // use the random index above and the array of hidingPlaces to get a random hiding place string
 
@@ -79,9 +83,7 @@ function handleGuess(userGuess, correctSpot) {
 
     // then add the .face css class to that element so that the face shows up
 
-    // then if the user guess is correct, increment the correct guesses
-
-    // update the DOM to show the new value of wins, losses and total guesses to the user
+    // then if the user guess is correct, increment the correct guesses// update the DOM to show the new value of wins, losses and total guesses to the user
 }
 
 function removeClasses() {
